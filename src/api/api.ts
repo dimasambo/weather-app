@@ -9,7 +9,7 @@ export const api = {
             .then(response => response.data)
     },
     getCoordinates(city: string) {
-        return axios.get<Array<CoordCityType>>(`http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${_accessKey}`)
+        return axios.get<Array<CoordCityType>>(`https://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${_accessKey}`)
             .then(response => response.data)
     }
 }
